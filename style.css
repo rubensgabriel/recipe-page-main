@@ -1,0 +1,113 @@
+:root{
+    /*Primary*/
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+
+    /*Neutral*/
+
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--lightGrey);
+    font-family: 'Outfit', sans-serif;
+    color: var(--wengeBrown);
+    line-height: 25px;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    background-color: var(--white);
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: 'Young serif', serif;
+    font-weight: 500;
+    color: var(--darkCharcoal);
+    line-height: 40px;
+}
+
+h2 {
+    color: var(--nutmeg);
+}
+
+h3 {
+    color: var(--darkRaspberry);
+}
+
+section {
+    background-color: var(--roseWhite);
+    padding: 10px 35px;
+    border-radius: 13px;
+}
+
+section ul {
+    margin-left: -15px;
+}
+
+li {
+    padding-left: 20px;
+    line-height: 33px;
+}
+
+li::marker {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+section li::marker {
+    color: var(--darkRaspberry); 
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--lightGrey);
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table strong {
+    color: var(--nutmeg);
+}
+
+tr {
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+td {
+    padding: 10px 40px;
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 0px;
+        border-radius: 0;
+    }
+
+    .principal {
+        padding: 0px 30px 30px;
+    }
+
+    img {
+        border-radius: 0;
+    }
+}
