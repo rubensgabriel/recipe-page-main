@@ -98,9 +98,14 @@ td {
 }
 
 @media (max-width: 400px) {
+    body {
+        margin: 0;
+    }
+    
     main {
         padding: 0px;
         border-radius: 0;
+        margin-bottom: 10px;
     }
 
     .principal {
